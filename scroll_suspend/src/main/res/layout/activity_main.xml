@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test.dmdfchina.com.scroll_suspend.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="test.dmdfchina.com.scroll_suspend.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--头部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="#9910"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="我是头部" />
+        </LinearLayout>
+
+        <!--当滑动上去后的所有内容部分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3000dp"
+            android:layout_marginTop="250dp"
+            android:background="#320123"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <!--存放悬停部分-->
+        <LinearLayout
+            android:id="@+id/suspend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp">
+
+        </LinearLayout>
+
+        <!--悬停到上面的部分-->
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="#911"
+                android:text="我是需要悬停的部分，欢迎点击我"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</test.dmdfchina.com.scroll_suspend.CustomScrollView>
